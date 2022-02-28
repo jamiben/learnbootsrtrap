@@ -12,6 +12,13 @@
 
     <!-- Fichier CSS personalisé "app.CSS" -->
     <link rel="stylesheet" href="style/app.css">
+
+    <style>
+        .hello {
+            display: grid;
+            grid-template-columns: ;
+        }
+    </style>
     <title>Document</title>
 </head>
 
@@ -23,7 +30,7 @@
         <!-- Ici la barre de navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">DWWM</a>
+                <a class="navbar-brand" href="index.html">DWWM</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -31,19 +38,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-whit" href="#">Acceuil</a>
+                            <a class="nav-link text-whit" href="index.html">Acceuil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-whit" href="#">Blog</a>
+                            <a class="nav-link text-whit" href="Blog.html">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-whit" href="#">Contact</a>
+                            <a class="nav-link text-whit" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-whit" href="">Connexion</a>
+                            <a class="nav-link text-whit" href="login.html">Connexion</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-whit" href="">Inscription</a>
+                            <a class="nav-link text-whit" href="register.html">Inscription</a>
                         </li>
                     </ul>
                 </div>
@@ -94,9 +101,10 @@
             </button>
         </div>
     </header>
+    <!-- Voici le contenue spécifique de ma page -->
     <main>
-        <!-- Voici le contenue spécifique de ma page -->
-        <section id="presentation-section">
+        <!-- Voici la section de présenttion -->
+        <section id="presentation-section" class="py-3px">
             <div class="container">
                 <h1 class="display-3">Hello World!</h1>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique rerum illo delectus,
@@ -104,9 +112,104 @@
                     accusamus maiores iste. Ducimus, architecto.</p>
             </div>
         </section>
-    </main>
-    <footer>
+        <!-- Voici la section des services -->
+        <section id="services-section" class="py-3">
+            <div class="py-5">
+                <div class="container py-5">
+                    <h2 class="text-center display-4 text-white my-2">Les services</h2>
+                    <div class="row mt-5">
+                        <div class="col-md-4">
+                            <div class="card text-dark bg-light mb-3" style="max-width: 30rem;">
+                                <div class="card-header">Header</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Light card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
 
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-dark bg-light mb-3" style="max-width: 30rem;">
+                                <div class="card-header">Header</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Light card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-dark bg-light mb-3" style="max-width: 30rem;">
+                                <div class="card-header">Header</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Light card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                            F
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Voici la section du marketing -->
+        <section id="marketinh-section" class="py-3">
+            <div class="container">
+                <h2 class="display-4 text-center">lorem impsum dolor</h2>
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <img src="images/sv1.svg" alt="Haut parleur" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 d-flex flex-column justify-content-center flex-align-center">
+                        <h3 class="display-6 text center">Marketing 1</h3>
+                        <ul>
+                            <li>abcde</li>
+                            <li>fghij</li>
+                            <li>klmno</li>
+                            <li>pqrst</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="order-md-2 col-md-6 d-flex justify-content-center align-items-center">
+                        <img src="images/sv2.svg" alt="Mini bus sous les tropiques" class="img-fluid">
+                    </div>
+                    <div class="order-md-1 col-md-6 d-flex flex-column justify-content-center flex-align-center">
+                        <h3 class="display-6 text center">Marketing 2</h3>
+                        <ul>
+                            <li>abcde</li>
+                            <li>fghij</li>
+                            <li>klmno</li>
+                            <li>pqrst</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <img src="images/sv3.svg" alt="Gic devant son téléphone portable" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 d-flex flex-column justify-content-center flex-align-center">
+                        <h3 class="display-6 text center">Marketing 1</h3>
+                        <ul>
+                            <li>abcde</li>
+                            <li>fghij</li>
+                            <li>klmno</li>
+                            <li>pqrst</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <span class="text-white">DWWM</span>
+            <a class="text-white "href="contact.html">Contact</a>
+        </div>
     </footer>
     <!-- Boostrap 5 screept -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
